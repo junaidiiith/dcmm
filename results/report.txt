@@ -1,0 +1,191 @@
+Hi, I wanted to summarize some new experiments I conducted.
+I changed the loss function in our GNN model and I did quite a bit of improvements.
+
+Firstly I considered all three cases for creating the categories - num of nodes, num of edges and combined but I did not see any significant differences across this dimension.
+
+Then I created for 4 cases, small, medium, large, all models to compare 3 GNN approaches and one GA approach. I used 50 percentile of models as small, 50-90 percentile as medium and 90 percentile above as large.
+The table shows what this means
+
+For comparison, I use hypervolume, cohesion and coupling metrics. For hypervolume, in one case I take the MAX hypervolume across all pareto sets and in another case I take the AVG hypervolume for all pareto sets.
+
+Below are the results for this experimental setting
+% shows the percentage of models for which that particular approach is the best
+
+Metric: MAX Hypervolume
+
+Small models
+Based on num nodes - GA: 88.806% GNN: 11.194%
+Based on num edges - GA: 87.500%, GNN: 12.500%
+Based on combined - GA: 87.121%, GNN: 12.879%
+
+Medium
+Based on num nodes -  GA: 97.059%, GNN: 2.941%
+Based on num edges - GA: 99.000%, GNN: 1.000%
+Based on combined - GA: 99.038%, GNN: 0.962%
+
+Large (same for all cases)
+GA: 92.593%, GNN: 7.407%
+
+Overall
+GA: 92.395%, GNN: 7.605%
+
+Implications - 
+1. GA outperforms GNN on all model sizes particularly in medium sized models
+2. GNN is better in 12% of the cases for small models and 7% for large
+
+
+Metric: Avg. Hypervolume
+
+Small models
+Based on num nodes - GA: 68.657%, Non GA: 31.343%
+Based on num edges - GA: 69.853%, Non GA: 30.147%
+Based on combined - GA: 68.182%, Non GA: 31.818%
+
+Medium
+Based on num nodes - GA: 85.294%, Non GA: 14.706%
+Based on num edges - GA: 87.000%, Non GA: 13.000%
+Based on combined - GA: 88.462%, Non GA: 11.538%
+
+Large (same for all cases)
+GA: 55.556%, Non GA: 44.444%
+
+Overall
+GA: 74.905%, Non GA: 25.095%
+
+Implications - 
+1. GA outperforms GNN in 70% of the cases
+2. GA outperforms particularly in medium sized models
+3. GNN outperforms GA in almost 50% of the cases for large models
+
+Metric: MAX Cohesion
+
+Max cohesion value is the cohesion value of the solution that has the highest cohesion * (1 - coupling) score
+
+Small models
+Based on num nodes - GA: 71.642%, Non GA: 28.358%
+Based on num edges - GA: 75.000%, Non GA: 25.000%
+Based on combined - GA: 71.970%, Non GA: 28.030%
+
+Medium
+Based on num nodes - GA: 96.078%, Non GA: 3.922%
+Based on num edges - GA: 92.000%, Non GA: 8.000%
+Based on combined - GA: 95.192%, Non GA: 4.808%
+
+Large (same for all cases)
+GA: 85.185%, Non GA: 14.815%
+
+Overall
+GA: 82.510%, Non GA: 17.490%
+
+Implications - 
+Almost same as AVG Hypervolume
+
+
+Metric: MIN Coupling
+
+Min couping value is the coupling value of the solution that has the highest cohesion * (1 - coupling) score
+
+Small models
+Based on num nodes: GA: 43.284%, Non GA: 56.716%
+Based on num edges: GA: 37.500%, Non GA: 62.500%
+Based on combined: GA: 37.121%, Non GA: 62.879%
+
+Medium
+Based on num nodes: GA: 40.196%, Non GA: 59.804%
+Based on num edges: GA: 47.000%, Non GA: 53.000%
+Based on combined: GA: 48.077%, Non GA: 51.923%
+
+Large (same for all cases)
+GA: 29.630%, Non GA: 70.370%
+
+Overall
+GA: 40.684%, Non GA: 59.316%
+
+Implications - 
+GNN outperforms GA for 60% of the cases for small models and 70% of the cases for large models
+GNN outperforms best on coupling for large models
+
+
+
+Comparison between different GNNs
+
+Metric: Max Hypervolume (GNN) - in this case, product of cohesion and (1 - coupling)
+
+Small models
+Based on num nodes - Our GNN: 49.254%, DMoN: 33.582%, DGI: 17.164%
+Based on num edges - Our GNN: 61.765%, DMoN: 25.000%, DGI: 13.235%
+Based on combined - Our GNN: 56.818%, DMoN: 28.788%, DGI: 14.394%
+
+
+Medium models
+Based on num nodes - Our GNN: 81.373%, DMoN: 15.686%, DGI: 2.941%
+Based on num edges - Our GNN: 68.000%, DMoN: 25.000%, DGI: 7.000%
+Based on combined - Our GNN: 74.038%, DMoN: 20.192%, DGI: 5.769%
+
+Large models
+Based on num nodes - Our GNN: 92.593%, DMoN: 7.407%
+Based on num edges - Our GNN: 81.481%, DMoN: 14.815%, DGI: 3.704%
+Based on combined - Our GNN: 81.481%, DMoN: 14.815%, DGI: 3.704%
+
+Overall - 
+Our GNN: 66.160%, DMoN: 23.954%, DGI: 9.886%
+
+Implications - 
+Our GNN model outperforms existing GNN models especially in medium and large models for a majority (more than 75%) of the cases
+
+
+Metric: Max Cohesion (GNNs)
+
+Small models
+Based on num nodes - Our GNN: 45.522%, DGI: 35.821%, DMoN: 18.657%
+Based on num edges - Our GNN: 56.618%, DGI: 26.471%, DMoN: 16.912%
+Based on combined - Our GNN: 51.515%, DGI: 31.061%, DMoN: 17.424%
+
+Medium models
+Based on num nodes - Our GNN: 74.510%, DMoN: 14.706%, DGI: 10.784%
+Based on num edges - Our GNN: 62.000%, DGI: 24.000%, DMoN: 14.000%
+Based on combined - Our GNN: 68.269%, DGI: 18.269%, DMoN: 13.462%
+
+Large models
+Based on num nodes - Our GNN: 81.481%, DGI: 11.111%, DMoN: 7.407%
+Based on num edges - Our GNN: 74.074%, DMoN: 18.519%, DGI: 7.407%
+Based on combined - Our GNN: 74.074%, DMoN: 18.519%, DGI: 7.407%
+
+Overall -
+Our GNN: 60.456%, DGI: 23.574%, DMoN: 15.970%
+
+Implications - Almost identical as hypervolume result
+
+
+Metric: Min Coupling (GNNs)
+
+Small models
+Based on num nodes - DMoN: 61.940%, Our GNN: 35.075%, DGI: 2.985%
+Based on num edges - DMoN: 56.618%, Our GNN: 41.176%, DGI: 2.206%
+Based on combined - DMoN: 60.606%, Our GNN: 37.121%, DGI: 2.273%
+
+Medium models
+Based on num nodes - Our GNN: 57.843%, DMoN: 40.196%, DGI: 1.961%
+Based on num edges - Our GNN: 55.000%, DMoN: 42.000%, DGI: 3.000%
+Based on combined - Our GNN: 60.577%, DMoN: 36.538%, DGI: 2.885%
+
+Large models
+Based on num nodes - Our GNN: 77.778%, DMoN: 22.222%
+Based on num edges - Our GNN: 59.259%, DMoN: 40.741%
+Based on combined - Our GNN: 55.556%, DMoN: 44.444%
+
+Overall -
+DMoN: 49.430%, Our GNN: 48.289%, DGI: 2.281%
+
+Implications
+1. Our approach provides best coupling for larger models
+2. For smaller models, DMoN performs best
+
+
+Overall implications - 
+
+1. GA outperforms GNN for hypervolume and cohesion especially for medium sized models. Based on the results, it seems clear that the results of hypervolume and cohesion are very similar implying a higher contribution of cohesion on hypervolume.
+2. GNN outperforms GA for majority of the cases, especially for larger models.
+
+3. Our proposed GNN outperforms existing GNNs on cohesion and hypervolume, the GNN approaches that perform poorly compared to GA
+4. Our proposed GNN outperforms existing GNN for couping specifically for larger models but for smaller models, existing GNNs are good.

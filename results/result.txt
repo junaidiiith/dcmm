@@ -1,0 +1,322 @@
+----------------------------------------------------------------------------------------------------
+Results for Max Hypervolume Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'ga': '88.806%', 'gnn': '6.716%', 'dgi': '2.239%', 'dmon': '2.239%', 'Non GA': '11.194%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'ga': '97.059%', 'gnn': '2.941%', 'Non GA': '2.941%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'ga': '92.593%', 'gnn': '7.407%', 'Non GA': '7.407%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'ga': '92.395%', 'gnn': '5.323%', 'dgi': '1.141%', 'dmon': '1.141%', 'Non GA': '7.605%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'ga': '87.500%', 'gnn': '8.088%', 'dgi': '2.206%', 'dmon': '2.206%', 'Non GA': '12.500%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'ga': '99.000%', 'gnn': '1.000%', 'Non GA': '1.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'ga': '92.593%', 'gnn': '7.407%', 'Non GA': '7.407%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'ga': '92.395%', 'gnn': '5.323%', 'dgi': '1.141%', 'dmon': '1.141%', 'Non GA': '7.605%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'ga': '87.121%', 'gnn': '8.333%', 'dgi': '2.273%', 'dmon': '2.273%', 'Non GA': '12.879%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'ga': '99.038%', 'gnn': '0.962%', 'Non GA': '0.962%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'ga': '92.593%', 'gnn': '7.407%', 'Non GA': '7.407%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'ga': '92.395%', 'gnn': '5.323%', 'dgi': '1.141%', 'dmon': '1.141%', 'Non GA': '7.605%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Max Hypervolume GNN Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'gnn': '53.731%', 'dmon': '30.597%', 'dgi': '15.672%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'gnn': '81.373%', 'dmon': '15.686%', 'dgi': '2.941%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'gnn': '92.593%', 'dmon': '7.407%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'gnn': '68.441%', 'dmon': '22.433%', 'dgi': '9.125%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'gnn': '65.441%', 'dmon': '21.324%', 'dgi': '13.235%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'gnn': '69.000%', 'dmon': '26.000%', 'dgi': '5.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'gnn': '81.481%', 'dmon': '14.815%', 'dgi': '3.704%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'gnn': '68.441%', 'dmon': '22.433%', 'dgi': '9.125%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'gnn': '59.848%', 'dmon': '25.758%', 'dgi': '14.394%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'gnn': '75.962%', 'dmon': '20.192%', 'dgi': '3.846%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'gnn': '81.481%', 'dmon': '14.815%', 'dgi': '3.704%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'gnn': '68.441%', 'dmon': '22.433%', 'dgi': '9.125%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Avg. Hypervolume Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'ga': '63.433%', 'gnn': '16.418%', 'dmon': '14.179%', 'dgi': '5.970%', 'Non GA': '36.567%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'ga': '85.294%', 'gnn': '12.745%', 'dmon': '1.961%', 'Non GA': '14.706%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'ga': '66.667%', 'gnn': '33.333%', 'Non GA': '33.333%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'ga': '72.243%', 'gnn': '16.730%', 'dmon': '7.985%', 'dgi': '3.042%', 'Non GA': '27.757%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'ga': '65.441%', 'gnn': '18.382%', 'dmon': '11.029%', 'dgi': '5.147%', 'Non GA': '34.559%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'ga': '86.000%', 'gnn': '9.000%', 'dmon': '4.000%', 'dgi': '1.000%', 'Non GA': '14.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'ga': '55.556%', 'gnn': '37.037%', 'dmon': '7.407%', 'Non GA': '44.444%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'ga': '72.243%', 'gnn': '16.730%', 'dmon': '7.985%', 'dgi': '3.042%', 'Non GA': '27.757%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'ga': '63.636%', 'gnn': '18.939%', 'dmon': '12.121%', 'dgi': '5.303%', 'Non GA': '36.364%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'ga': '87.500%', 'gnn': '8.654%', 'dmon': '2.885%', 'dgi': '0.962%', 'Non GA': '12.500%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'ga': '55.556%', 'gnn': '37.037%', 'dmon': '7.407%', 'Non GA': '44.444%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'ga': '72.243%', 'gnn': '16.730%', 'dmon': '7.985%', 'dgi': '3.042%', 'Non GA': '27.757%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Max Cohesion Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'ga': '68.657%', 'dgi': '14.925%', 'gnn': '14.925%', 'dmon': '1.493%', 'Non GA': '31.343%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'ga': '96.078%', 'gnn': '3.922%', 'Non GA': '3.922%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'ga': '85.185%', 'gnn': '11.111%', 'dgi': '3.704%', 'Non GA': '14.815%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'ga': '80.989%', 'gnn': '10.266%', 'dgi': '7.985%', 'dmon': '0.760%', 'Non GA': '19.011%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'ga': '72.059%', 'gnn': '14.706%', 'dgi': '11.765%', 'dmon': '1.471%', 'Non GA': '27.941%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'ga': '92.000%', 'gnn': '4.000%', 'dgi': '4.000%', 'Non GA': '8.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'ga': '85.185%', 'gnn': '11.111%', 'dgi': '3.704%', 'Non GA': '14.815%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'ga': '80.989%', 'gnn': '10.266%', 'dgi': '7.985%', 'dmon': '0.760%', 'Non GA': '19.011%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'ga': '68.939%', 'gnn': '15.909%', 'dgi': '13.636%', 'dmon': '1.515%', 'Non GA': '31.061%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'ga': '95.192%', 'gnn': '2.885%', 'dgi': '1.923%', 'Non GA': '4.808%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'ga': '85.185%', 'gnn': '11.111%', 'dgi': '3.704%', 'Non GA': '14.815%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'ga': '80.989%', 'gnn': '10.266%', 'dgi': '7.985%', 'dmon': '0.760%', 'Non GA': '19.011%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Max Cohesion (GNNs) Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'gnn': '44.030%', 'dgi': '37.313%', 'dmon': '18.657%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'gnn': '74.510%', 'dmon': '14.706%', 'dgi': '10.784%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'gnn': '81.481%', 'dgi': '11.111%', 'dmon': '7.407%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'gnn': '59.696%', 'dgi': '24.335%', 'dmon': '15.970%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'gnn': '55.882%', 'dgi': '27.941%', 'dmon': '16.176%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'gnn': '61.000%', 'dgi': '24.000%', 'dmon': '15.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'gnn': '74.074%', 'dmon': '18.519%', 'dgi': '7.407%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'gnn': '59.696%', 'dgi': '24.335%', 'dmon': '15.970%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'gnn': '49.242%', 'dgi': '33.333%', 'dmon': '17.424%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'gnn': '69.231%', 'dgi': '17.308%', 'dmon': '13.462%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'gnn': '74.074%', 'dmon': '18.519%', 'dgi': '7.407%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'gnn': '59.696%', 'dgi': '24.335%', 'dmon': '15.970%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Min Coupling Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'ga': '41.791%', 'dmon': '32.090%', 'gnn': '25.373%', 'dgi': '0.746%', 'Non GA': '58.209%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'gnn': '41.176%', 'ga': '40.196%', 'dmon': '17.647%', 'dgi': '0.980%', 'Non GA': '59.804%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'gnn': '59.259%', 'ga': '29.630%', 'dmon': '11.111%', 'Non GA': '70.370%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'ga': '39.924%', 'gnn': '34.981%', 'dmon': '24.335%', 'dgi': '0.760%', 'Non GA': '60.076%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'ga': '36.029%', 'gnn': '31.618%', 'dmon': '31.618%', 'dgi': '0.735%', 'Non GA': '63.971%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'ga': '47.000%', 'gnn': '36.000%', 'dmon': '16.000%', 'dgi': '1.000%', 'Non GA': '53.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'gnn': '48.148%', 'ga': '33.333%', 'dmon': '18.519%', 'Non GA': '66.667%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'ga': '39.924%', 'gnn': '34.981%', 'dmon': '24.335%', 'dgi': '0.760%', 'Non GA': '60.076%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'ga': '35.606%', 'dmon': '33.333%', 'gnn': '30.303%', 'dgi': '0.758%', 'Non GA': '64.394%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'ga': '48.077%', 'gnn': '37.500%', 'dmon': '13.462%', 'dgi': '0.962%', 'Non GA': '51.923%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'gnn': '48.148%', 'ga': '29.630%', 'dmon': '22.222%', 'Non GA': '70.370%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'ga': '39.924%', 'gnn': '34.981%', 'dmon': '24.335%', 'dgi': '0.760%', 'Non GA': '60.076%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Results for Min Coupling (GNNs) Model
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_nodes
+Results for Small
+Results for models with 0 < num_nodes <= 49 with 134 out of 263 models
+{'dmon': '53.731%', 'gnn': '43.284%', 'dgi': '2.985%'}
+Results for Medium
+Results for models with 49 < num_nodes <= 97 with 102 out of 263 models
+{'gnn': '56.863%', 'dmon': '41.176%', 'dgi': '1.961%'}
+Results for Large
+Results for models with 97 < num_nodes <= 226 with 27 out of 263 models
+{'gnn': '77.778%', 'dmon': '22.222%'}
+Results for Overall
+Results for models with 0 < num_nodes <= 226 with 263 out of 263 models
+{'gnn': '52.091%', 'dmon': '45.627%', 'dgi': '2.281%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: num_edges
+Results for Small
+Results for models with 0 < num_edges <= 113 with 136 out of 263 models
+{'gnn': '48.529%', 'dmon': '48.529%', 'dgi': '2.941%'}
+Results for Medium
+Results for models with 113 < num_edges <= 303 with 100 out of 263 models
+{'gnn': '55.000%', 'dmon': '43.000%', 'dgi': '2.000%'}
+Results for Large
+Results for models with 303 < num_edges <= 1552 with 27 out of 263 models
+{'gnn': '59.259%', 'dmon': '40.741%'}
+Results for Overall
+Results for models with 0 < num_edges <= 1552 with 263 out of 263 models
+{'gnn': '52.091%', 'dmon': '45.627%', 'dgi': '2.281%'}
+----------------------------------------------------------------------------------------------------
+Results for considering model size as: combined
+Results for Small
+Results for models with 0 < combined <= 163 with 132 out of 263 models
+{'dmon': '52.273%', 'gnn': '44.697%', 'dgi': '3.030%'}
+Results for Medium
+Results for models with 163 < combined <= 424 with 104 out of 263 models
+{'gnn': '60.577%', 'dmon': '37.500%', 'dgi': '1.923%'}
+Results for Large
+Results for models with 424 < combined <= 1778 with 27 out of 263 models
+{'gnn': '55.556%', 'dmon': '44.444%'}
+Results for Overall
+Results for models with 0 < combined <= 1778 with 263 out of 263 models
+{'gnn': '52.091%', 'dmon': '45.627%', 'dgi': '2.281%'}
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
